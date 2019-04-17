@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GoTrash | Media Jual Sampah</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/jual.css">
+
+  <style>
+    body {
+      height: auto;
+      background: #F8F8FA;
+    }
+
+    .location {
+      background-color: #C9EC71;
+    }
+
+    #myTopnav {
+      box-shadow: none;
+      border-bottom: none;
+      background-color: unset
+    }
+
+    .topnav a {
+      color: #000
+    }
+
+    #txt,
+    #txt1,
+    #txt2,
+    #txt3 {
+      color: #000
+    }
+
+    .btn-cancel {
+      margin-left: 0;
+      background: #2096a2;
+    }
+
+    .btn-cancel:hover {
+      border: 1px solid #2096a2;
+      color: #2096a2;
+      background: transparent
+    }
+
+    .section-jual {
+      margin-bottom: 5em
+    }
+
+    .service-menu {
+      grid-template-columns: 25% 25% 25% 25%
+    }
+
+    .service {
+      width: 10em;
+      height: 10em;
+      margin-bottom: 1em
+    }
+
+    .modal-content p {
+      font-size: 1.3em;
+      line-height: 1;
+      margin: 2em 5%;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 2em 5%;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+      font-size: 1.2rem
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    @media only screen and (max-width: 1260px) {
+
+      .btn-jual,
+      .btn-cancel {
+        padding: 0 10%;
+        font-size: 1rem;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .service {
+        width: 8em;
+        height: 8em
+      }
+    }
+
+    @media only screen and (max-width: 960px) {
+
+      .btn-jual,
+      .btn-cancel {
+        width: 70%;
+        margin-left: 0;
+        padding: 0 10%;
+        font-size: 1rem;
+        margin-top: 1em;
+        height: 45px;
+        line-height: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <svg width="23" height="20">
+        <path d="M0,5 22,5" stroke="#000" stroke-width="3" />
+        <path d="M4,11 22,11" stroke="#000" stroke-width="3" />
+        <path d="M8,17 22,17" stroke="#000" stroke-width="3" />
+      </svg>
+    </a>
+    <img src="img/logo-2.png" id="logo">
+    <div class="nav-menu">
+      <a href="index.html">Beranda</a>
+      <a href="jual.html">Jual Sampah</a>
+      <a href="blog.html">Artikel</a>
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+
+  <!-- FormContent -->
+  <div class="section-jual">
+    <!-- OnStep -->
+    <div class="progress-jual">
+      <img src="img/vector-location.png" class="img-vector">
+      <h1>Harga Jual Sampah</h1>
+      <p>
+        Temukan kriteria sampah yang ingin kamu jual dan temukan informasi harga yang
+        mungkin akan kamu terima.
+      </p>
+      <!-- <div style="text-align: center;">
+        <a class="btn-jual" href="jual-step2.html">Selanjutnya</a>
+        <a href="harga.html" class="btn-cancel">Info Harga</a>
+      </div> -->
+    </div>
+
+    <!-- FormContent -->
+    <div class="form-jual">
+      <div class="alert-jual">
+        <img src="img/icon/alert.png">
+        <a>
+          Pilih jensi sampah yang ingin kamu jual dan temukan informasi harga yang tertera.
+          <b>NB : </b>Harga yang tertera merupakan harga sementara yang mungkin dapat berubah setiap saat.
+        </a>
+      </div>
+      <div class="center">
+        <label class="title-price">Jenis Sampah</label>
+        <label class="add-price">Sampah digolongkan kedalam 4 jenis dimana setiap jenisnya memiliki nilai ekonomi yang
+          berbeda.</label>
+      </div>
+      <div class="service-menu">
+        <div class="center">
+          <div style="background-image: url('img/icon/plastik.png')" id="myBtn" class="service service-1"></div>
+          <div class="label">Plastik</div>
+        </div>
+        <br>
+        <div class="center">
+          <div style="background-image: url('img/icon/glass.png')" id="myBtn1" class="service service-2"></div>
+          <div class="label">Kaca</div>
+        </div>
+        <br>
+        <div class="center">
+          <div style="background-image: url('img/icon/paper.png')" id="myBtn2" class="service service-3"></div>
+          <div class="label">Kertas</div>
+        </div>
+        <br>
+        <div class="center">
+          <div style="background-image: url('img/icon/organic.png')" id="myBtn3" class="service service-4"></div>
+          <div class="label">Organik</div>
+        </div>
+        <br>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer" id="tentang">
+    <div class="section-footer">
+      <div class="content-footer">
+        <div class="about-footer column-footer">
+          <img class="img-footer" src="img/footer-logo.png" alt="">
+          <p class="field-footer">
+            Go Trash merupakan aplikasi berbasis web yang bertujuan untuk membantu
+            masyarakat Indonesia dalam mengolah sampah-nya.
+          </p>
+        </div>
+        <div class="column-footer">
+          <p class="title-link">Navigasi</p>
+          <p class="child-link"><a href="#beranda">Beranda</a></p>
+          <p class="child-link"><a href="jual.html">Jual Sampah</a></p>
+          <p class="child-link"><a href="blog.html">Artikel</a></p>
+          <p class="child-link"><a href="login.html">Login</a></p>
+        </div>
+        <div class="column-footer">
+          <p class="title-link" style="text-transform: uppercase"><b>Lainnya</b></p>
+          <p class="child-link"><a href="tentang.html">Tentang</a></p>
+          <p class="child-link"><a href="login.html">Sign In</a></p>
+          <p class="child-link"><a href="signup.html">Sign Up</a></p>
+        </div>
+        <div class="contact-footer">
+          <p class="title-link" style="text-transform: uppercase; text-align: left"><b>Kontak & Informasi</b>
+          </p>
+          <p class="contact-footfield">
+            Jl. Pegangsaan Dua No.97, Jakarta Utara
+            Jl Tugu 1 65119 Malang - Jawa Timur - Indonesia
+            <br><br>
+            Email : go.trash@gmail.com
+            <br>
+            Telepon : (021)332-376
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <!-- 1 -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="center">
+        <h1>Sampah Plastik</h1>
+        <p>Terdiri dari semua barang yang terbuat dari bahan
+          dasar plastik seperti botol air mineral, gelas aqua, dst.
+          Untuk harga jual dari sampah plastik sendiri adalah :
+        </p>
+        <table border="1">
+          <tr>
+            <th>No</th>
+            <th>Nama Barang (Sampah)</th>
+            <th>Harga (Rp)</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Gelas, botol aqua dan sejenisnya</td>
+            <td>3000/kg</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Kresek</td>
+            <td>1200/kg</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Plastik emberan</td>
+            <td>1300/kg</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Plastik gelas Ale Ale</td>
+            <td>2000/kg</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Jerigen</td>
+            <td>900/kg</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Paralon</td>
+            <td>500/kg</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Kertas/mika</td>
+            <td>1200/kg</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Plastik Bening</td>
+            <td>1000/kg</td>
+          </tr>
+        </table>
+        <p style="text-align: left; margin-left: 5%">
+          <b>NB :</b> Harga yang tertera merupakan harga sementara yang mungkin dapat berubah setiap saat.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 2 -->
+  <div id="myModal1" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close1">&times;</span>
+      <div class="center">
+        <h1>Sampah Kaca</h1>
+        <p>Terdiri dari semua barang yang terbuat dari bahan
+          dasar kaca.
+          Untuk harga jual dari sampah kaca sendiri adalah :
+        </p>
+        <table border="1">
+          <tr>
+            <th>No</th>
+            <th>Nama Barang (Sampah)</th>
+            <th>Harga (Rp)</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Gelas Kaca</td>
+            <td>50/buah</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Botol Kecap</td>
+            <td>300/botol</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Botol Bir Besar</td>
+            <td>1000/botol</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Botol Bir Kecil</td>
+            <td>500/botol</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Botol Sprite/Teh Botol</td>
+            <td>150/kg</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Botol Putih/Bening</td>
+            <td>150/kg</td>
+          </tr>
+        </table>
+        <p style="text-align: left; margin-left: 5%">
+          <b>NB :</b> Harga yang tertera merupakan harga sementara yang mungkin dapat berubah setiap saat.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 3 -->
+  <div id="myModal2" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close2">&times;</span>
+      <div class="center">
+        <h1>Sampah Kertas</h1>
+        <p>Terdiri dari semua barang yang terbuat dari bahan
+          dasar kertas.
+          Untuk harga jual dari sampah kertas sendiri adalah :
+        </p>
+        <table border="1">
+          <tr>
+            <th>No</th>
+            <th>Nama Barang (Sampah)</th>
+            <th>Harga (Rp)</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Tebal / berwarna/duplek</td>
+            <td>300/kg</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Putihan/HVS</td>
+            <td>1200/kg</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Koran</td>
+            <td>1100/kg</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Buku Tulis</td>
+            <td>800/kg</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Majalah</td>
+            <td>800/kg</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Buram/CD</td>
+            <td>900/kg</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Kertas/mika</td>
+            <td>1200/kg</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Arsip/kertas warna</td>
+            <td>500/kg</td>
+          </tr>
+        </table>
+        <p style="text-align: left; margin-left: 5%">
+          <b>NB :</b> Harga yang tertera merupakan harga sementara yang mungkin dapat berubah setiap saat.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 4 -->
+  <div id="myModal3" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close3">&times;</span>
+      <div class="center">
+        <h1>Sampah Organik</h1>
+        <p>Terdiri dari semua barang yang terbuat dari bahan
+          dasar orgnaik seperti Daun kering, Rumput kering, Serbuk gergaji serutan kayu, sekam padi,
+          Kulit Jagung dan lainnya.
+          Untuk harga jual dari sampah organik sendiri adalah :
+        </p>
+        <table border="1">
+          <tr>
+            <th>No</th>
+            <th>Nama Barang (Sampah)</th>
+            <th>Harga (Rp)</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Bahan Organik</td>
+            <td>500/kg</td>
+          </tr>
+        </table>
+        <p style="text-align: left; margin-left: 5%">
+          <b>NB :</b> Harga yang tertera merupakan harga sementara yang mungkin dapat berubah setiap saat.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- Script -->
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  var modal1 = document.getElementById('myModal1');
+  var modal2 = document.getElementById('myModal2');
+  var modal3 = document.getElementById('myModal3');
+
+  var btn = document.getElementById("myBtn");
+  var btn1 = document.getElementById("myBtn1");
+  var btn2 = document.getElementById("myBtn2");
+  var btn3 = document.getElementById("myBtn3");
+
+  var span = document.getElementsByClassName("close")[0];
+  var span1 = document.getElementsByClassName("close1")[0];
+  var span2 = document.getElementsByClassName("close2")[0];
+  var span3 = document.getElementsByClassName("close3")[0];
+
+  // When the user clicks the button, open the modal 
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  btn1.onclick = function () {
+    modal1.style.display = "block";
+  }
+
+  btn2.onclick = function () {
+    modal2.style.display = "block";
+  }
+
+  btn3.onclick = function () {
+    modal3.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  span1.onclick = function () {
+    modal1.style.display = "none";
+  }
+
+  span2.onclick = function () {
+    modal2.style.display = "none";
+  }
+
+  span3.onclick = function () {
+    modal3.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+    else if (event.target == modal1) {
+      modal1.style.display = "none";
+    }
+    else if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+    else if (event.target == modal3) {
+      modal3.style.display = "none";
+    }
+  }
+
+  window.onscroll = function () {
+    scrollFunction()
+  };
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("myTopnav").style.background = "#fff";
+      document.getElementById("myTopnav").style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.1)";
+      document.getElementById("myTopnav").style.borderBottom = "2px solid rgb(214, 210, 210)";
+
+      document.getElementById("txt").style.color = "#000";
+      document.getElementById("txt1").style.color = "#000";
+      document.getElementById("txt2").style.color = "#000";
+      document.getElementById("txt3").style.color = "#000";
+    } else {
+      document.getElementById("myTopnav").style.background = "transparent";
+      document.getElementById("myTopnav").style.boxShadow = "none";
+      document.getElementById("myTopnav").style.borderBottom = "none";
+
+      document.getElementById("txt").style.color = "#fff";
+      document.getElementById("txt1").style.color = "#fff";
+      document.getElementById("txt2").style.color = "#fff";
+      document.getElementById("txt3").style.color = "#fff";
+    }
+
+    document.getElementById("txt").onmouseover = function () { mouseOver() };
+    document.getElementById("txt").onmouseout = function () { mouseOut() };
+
+    document.getElementById("txt1").onmouseover = function () { mouseOver1() };
+    document.getElementById("txt1").onmouseout = function () { mouseOut1() };
+
+    document.getElementById("txt2").onmouseover = function () { mouseOver2() };
+    document.getElementById("txt2").onmouseout = function () { mouseOut2() };
+
+    document.getElementById("txt3").onmouseover = function () { mouseOver3() };
+    document.getElementById("txt3").onmouseout = function () { mouseOut3() };
+
+    // scroll > 80
+    // mouseOver
+    function mouseOver() {
+      document.getElementById("txt").style.color = "#AAD758";
+    }
+
+    function mouseOver1() {
+      document.getElementById("txt1").style.color = "#AAD758";
+    }
+
+    function mouseOver2() {
+      document.getElementById("txt2").style.color = "#AAD758";
+    }
+
+    function mouseOver3() {
+      document.getElementById("txt3").style.color = "#AAD758";
+    }
+    // mouseOut
+    function mouseOut() {
+      document.getElementById("txt").style.color = "#000";
+    }
+
+    function mouseOut1() {
+      document.getElementById("txt1").style.color = "#000";
+    }
+
+    function mouseOut2() {
+      document.getElementById("txt2").style.color = "#000";
+    }
+
+    function mouseOut3() {
+      document.getElementById("txt3").style.color = "#000";
+    }
+
+    // scroll < 80
+    // mouseOver
+    function mouseOverblack() {
+      document.getElementById("txt").style.color = "#AAD758";
+    }
+
+    function mouseOverblack1() {
+      document.getElementById("txt1").style.color = "#AAD758";
+    }
+
+    function mouseOverblack2() {
+      document.getElementById("txt2").style.color = "#AAD758";
+    }
+
+    function mouseOverblack3() {
+      document.getElementById("txt3").style.color = "#AAD758";
+    }
+    // mouseOut
+    function mouseOutblack() {
+      document.getElementById("txt").style.color = "#fff";
+    }
+
+    function mouseOutblack1() {
+      document.getElementById("txt1").style.color = "#fff";
+    }
+
+    function mouseOutblack2() {
+      document.getElementById("txt2").style.color = "#fff";
+    }
+
+    function mouseOutblack3() {
+      document.getElementById("txt3").style.color = "#fff";
+    }
+  }
+</script>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GoTrash | Media Jual Sampah</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/blog.css">
+
+  <style>
+    body {
+      background: #FAFAFA
+    }
+
+    #myTopnav {
+      background-color: transparent;
+      border-bottom: none;
+      box-shadow: none;
+    }
+
+    .topnav a {
+      color: #000
+    }
+
+    .label-header {
+      margin: 10% 6%;
+    }
+
+    .blog-header {
+      background-image: url('img/about-header.png')
+    }
+
+    #txt,
+    #txt1,
+    #txt2,
+    #txt3 {
+      color: #000
+    }
+
+    .btn-content a {
+      margin-top: 2.5em;
+      padding: 0 40px;
+    }
+
+    .section-about {
+      margin-bottom: 2.5em
+    }
+
+    .services-content {
+      margin-top: 0;
+      margin-bottom: 2.5em
+    }
+
+    @media only screen and (max-width: 1050px) {
+      .label-header h1 {
+        font-size: 5em;
+      }
+
+      .label-header p {
+        font-size: 1.7em;
+      }
+
+      .label-header {
+        margin: 12% 6%;
+      }
+    }
+
+    @media only screen and (max-width: 1006px) {
+      .blog-header {
+        background-size: contain;
+        background-position: top
+      }
+    }
+
+    @media only screen and (max-width: 850px) {
+      .blog-header {
+        background-image: url('img/about-header-responsive.png')
+      }
+
+      .label-header {
+        margin: 16% 6%;
+      }
+
+      .label-header h1 {
+        font-size: 4em;
+      }
+
+      .label-header p {
+        font-size: 1.5em;
+        margin-top: 0
+      }
+
+      .btn-content a {
+        padding: 0 5%;
+        font-size: 0.9rem
+      }
+    }
+
+    @media only screen and (max-width: 670px) {
+      .blog-header {
+        background-image: url('img/about-header-responsive-2.png');
+        background-position: center;
+        background-size: cover
+      }
+
+      .label-header {
+        max-width: 100%;
+        margin: 10% 6%;
+      }
+
+      .label-header h1 {
+        text-align: center !important
+      }
+
+      .label-header p {
+        text-align: center !important;
+        font-size: 1.5em;
+        margin-top: 2em;
+        margin-right: 10%;
+        margin-left: 10%
+      }
+
+      .btn-content {
+        text-align: center !important;
+        margin: 0 20%
+      }
+
+      .btn-content a {
+        display: block
+      }
+    }
+
+    @media only screen and (max-width: 670px) {
+      .label-header p {
+        margin-right: 5%;
+        margin-left: 5%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <svg width="23" height="20">
+        <path d="M0,5 22,5" stroke="#000" stroke-width="3" />
+        <path d="M4,11 22,11" stroke="#000" stroke-width="3" />
+        <path d="M8,17 22,17" stroke="#000" stroke-width="3" />
+      </svg>
+    </a>
+    <img src="img/logo-2.png" id="logo">
+    <div class="nav-menu">
+      <a href="index.html">Beranda</a>
+      <a href="jual.html">Jual Sampah</a>
+      <a href="blog.html">Artikel</a>
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="header-field" id="beranda">
+    <div class="blog-header">
+      <div class="label-header">
+        <h1>Tentang Kami</h1>
+        <p>
+          Go Trash merupakan aplikasi berbasis web yang bertujuan untuk membantu
+          masyarakat Indonesia dalam mengolah sampah-nya.
+          <i>Sudah tahukah kamu cara mengolah sampah yang benar ?</i>
+        </p>
+        <div class="btn-content">
+          <a href="artikel/artikel1.html">Belajar Mengolah Sampah</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service -->
+  <div class="section-content">
+    <div id="service" class="services-content">
+      <div class="field-services">
+        <div class="content-services">
+          <h1>Layanan Kami</h1>
+          <div class="line" style=" margin-left: 46%; margin-right: 46%; width: 8%"></div>
+          <div class="service-menu">
+            <div class="center">
+              <div class="service service-1"></div>
+              <div class="label">Info Lokasi</div>
+            </div>
+            <br>
+            <div class="center">
+              <div class="service service-5"></div>
+              <div class="label">Jual Sampah</div>
+            </div>
+            <br>
+            <div class="center">
+              <div class="service service-2"></div>
+              <div class="label">Jemput Sampah</div>
+            </div>
+            <br>
+            <div class="center">
+              <div class="service service-3"></div>
+              <div class="label">Edukasi Sampah</div>
+            </div>
+            <br>
+            <div class="center">
+              <div class="service service-4"></div>
+              <div class="label">Transaksi Online</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How -->
+  <div class="section-howwe">
+
+    <div class="center"></div>
+    <div class="center">
+      <h1>Bagaimana Kami berdiri ?</h1>
+      <div class="line" style=" margin-left: 46%; margin-right: 46%; width: 8%"></div>
+      <div class="howwe">
+        <img src="img/login_ilustrator.png">
+        <p>
+          Melihat adanya permasalahan mengenai sampah yang bergitu serius di Indonesia
+          ,khususnya di daerah Jakarta, Gotrash berupaya hadir memberikan solusi untuk
+          permasalahan tersebut. Namun semuanya tidak semudah yang terpikirkan.
+          <br><br>
+          Dengan Gotrash, kami selalu berusaha untuk menyelesaikan masalah sapmah yang ada,
+          namun kami sadar bahwa hanya dengan kekuatan tim kami saja, itu tidaklah cukup. Oleh
+          karena itu kami terpikirkan untuk berkolaborasi dengan masyarakat sekitar
+          untuk bersama - sama mengatasi permasalahan ini. Disinilah Gotrash bernar - benar
+          terbentuk.
+          <br><br>
+          Namun, tidak cukup disini, dalam mengatasi permasalahan sebesar ini, campur tangan
+          dari semua pihak sangatlah dibutuhkan. Salah satunya adalah melakukannya bersama anda.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" id="tentang">
+    <div class="section-footer">
+      <div class="content-footer">
+        <div class="about-footer column-footer">
+          <img class="img-footer" src="img/footer-logo.png" alt="">
+          <p class="field-footer">
+            Go Trash merupakan aplikasi berbasis web yang bertujuan untuk membantu
+            masyarakat Indonesia dalam mengolah sampah-nya.
+          </p>
+        </div>
+        <div class="column-footer">
+          <p class="title-link">Navigasi</p>
+          <p class="child-link"><a href="#beranda">Beranda</a></p>
+          <p class="child-link"><a href="jual.html">Jual Sampah</a></p>
+          <p class="child-link"><a href="blog.html">Artikel</a></p>
+          <p class="child-link"><a href="login.html">Login</a></p>
+        </div>
+        <div class="column-footer">
+          <p class="title-link" style="text-transform: uppercase"><b>Lainnya</b></p>
+          <p class="child-link"><a href="tentang.html">Tentang</a></p>
+          <p class="child-link"><a href="login.html">Sign In</a></p>
+          <p class="child-link"><a href="signup.html">Sign Up</a></p>
+        </div>
+        <div class="contact-footer">
+          <p class="title-link" style="text-transform: uppercase; text-align: left"><b>Kontak & Informasi</b>
+          </p>
+          <p class="contact-footfield">
+            Jl. Pegangsaan Dua No.97, Jakarta Utara
+            Jl Tugu 1 65119 Malang - Jawa Timur - Indonesia
+            <br><br>
+            Email : go.trash@gmail.com
+            <br>
+            Telepon : (021)332-376
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    window.onscroll = function () {
+      scrollFunction()
+    };
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("myTopnav").style.background = "#fff";
+        document.getElementById("myTopnav").style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.1)";
+        document.getElementById("myTopnav").style.borderBottom = "2px solid rgb(214, 210, 210)";
+
+        document.getElementById("txt").style.color = "#000";
+        document.getElementById("txt1").style.color = "#000";
+        document.getElementById("txt2").style.color = "#000";
+        document.getElementById("txt3").style.color = "#000";
+      } else {
+        document.getElementById("myTopnav").style.background = "transparent";
+        document.getElementById("myTopnav").style.boxShadow = "none";
+        document.getElementById("myTopnav").style.borderBottom = "none";
+
+        document.getElementById("txt").style.color = "#fff";
+        document.getElementById("txt1").style.color = "#fff";
+        document.getElementById("txt2").style.color = "#fff";
+        document.getElementById("txt3").style.color = "#fff";
+      }
+    }
+  </script>
+</body>
+
+</html>
